@@ -17,9 +17,3 @@ export const Title = styled.Text`
   margin-bottom: 20px;
   fontWeight: bold
 `;
-
-export const Logo = styled.Image`
-  width: 50px;
-  height: 50px;
-  margin-bottom: 10px;
-`;

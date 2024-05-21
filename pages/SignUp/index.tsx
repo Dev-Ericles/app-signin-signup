@@ -1,11 +1,9 @@
 import React from 'react';
 import { ScrollView } from 'react-native';
-import favicon from '../../assets/favicon.png';
 import { Button } from '../../src/components/screen/button';
 import { Input } from '../../src/components/screen/input';
-import { Container, Content, Logo, Title } from './styles';
-
-export const SignIn: React.FunctionComponent = () => {
+import { Container, Content, Title } from './styles';
+export const SignUp: React.FunctionComponent = () => {
   return (
     <ScrollView
       keyboardShouldPersistTaps="handled"
@@ -13,11 +11,11 @@ export const SignIn: React.FunctionComponent = () => {
     >
       <Container>
         <Content>
-          <Logo source={favicon}/>
-          <Title>Login</Title>
+          <Title>Criar uma conta</Title>
+          <Input placeholder="Nome de usuário"/>
           <Input placeholder="Email"/>
           <Input placeholder="Senha"/>
-          <Button title='Entrar'/>
+          <Button title='Criar conta'/>
         </Content>
       </Container>
     </ScrollView>
